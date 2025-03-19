@@ -1,0 +1,13 @@
+rtw89
+Driver for Realtek 802.11ax wireless chips: 8851BE, 8852AE, 8852BE, 8852CE, and 8922AE.
+
+After installation finish run:
+depmod -a
+modprobe rtw89
+and then: mkinitrd or dracut, finally you may reboot.
+
+Note1: If you need these modules then you also need the blacklist file which included in installation package.
+Special if you are on hp or lenovo harware.
+
+Note2: These drivers will not build for kernels older than 6.6
+In such case read README.SBo
