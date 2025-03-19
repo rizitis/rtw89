@@ -7,5 +7,5 @@ for fws in $fw; do
         rm -f "/lib/firmware/$fws"
     fi
 
-    sudo ln -s "/usr/src/rtw89-firmware/$fws" "/lib/firmware/$fws"
+    ln -s "/usr/src/rtw89-firmware/$fws" "/lib/firmware/$fws"
 done
